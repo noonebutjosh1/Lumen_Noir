@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Lumen Noir Creative Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&amp;family=Inter:wght@400;500;600;700&amp;family=Marcellus&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="contact-page">
+    <canvas id="space-scene" aria-hidden="true"></canvas>
+
+    <header class="site-header" id="siteHeader">
+      <a class="brand" href="index.html#home" aria-label="Lumen Noir home">
+        <span class="brand__mark">LN</span>
+        <span class="brand__text">Lumen Noir</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="siteNav" aria-label="Main navigation">
+        <a href="index.html#home">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="#brief">Start a Project</a>
+    </header>
+
+    <main>
+      <section class="contact-hero section">
+        <p class="eyebrow">Open a brief</p>
+        <h1>Start a Project</h1>
+        <p>
+          Share your concept, timeline, or rough direction, and we will shape it into a polished visual
+          strategy with clarity and purpose.
+        </p>
+      </section>
+
+      <section class="contact-console section" id="brief" aria-label="Contact options and project brief">
+        <div class="contact-options">
+          <article class="contact-card">
+            <span>Fastest line</span>
+            <h2>WhatsApp</h2>
+            <p>Ideal for rapid conversations, quick approvals, and day-to-day project coordination.</p>
+            <a href="https://wa.me/2349049720587" target="_blank" rel="noreferrer">09049720587</a>
+          </article>
+
+          <article class="contact-card">
+            <span>Briefs and files</span>
+            <h2>Email</h2>
+            <p>Best suited for detailed briefs, file sharing, references, and structured collaboration.</p>
+            <a href="mailto:lumennoir.designs@gmail.com">lumennoir.designs@gmail.com</a>
+          </article>
+
+          <article class="contact-card">
+            <span>Chat channel</span>
+            <h2>Telegram</h2>
+            <p>Send quick project details and follow up with the same number used for WhatsApp.</p>
+            <a href="https://t.me/+2349049720587" target="_blank" rel="noreferrer">09049720587</a>
+          </article>
+
+          <article class="contact-card">
+            <span>Direct messages</span>
+            <h2>Instagram</h2>
+            <p>Reach out via Instagram DM for creative direction, mood references, or launch ideas.</p>
+            <a href="https://www.instagram.com/lumennoir_designs/" target="_blank" rel="noreferrer">@lumennoir_designs</a>
+          </article>
+
+          <article class="contact-card contact-card--signal">
+            <span>Response window</span>
+            <h2>Within 24 hours</h2>
+            <p>A reliable response window for social campaigns, promotional materials, and identity-led design work.</p>
+          </article>
+        </div>
+
+        <form class="brief-form" id="briefForm">
+          <div class="form-heading">
+            <p class="eyebrow">Project transmission</p>
+            <h2>Send a Creative Brief</h2>
+          </div>
+
+          <label>
+            <span>Name</span>
+            <input name="name" type="text" autocomplete="name" placeholder="Your name" required />
+          </label>
+
+          <label>
+            <span>Preferred contact method</span>
+            <select name="contactMethod" required>
+              <option value="">Select one</option>
+              <option>WhatsApp</option>
+              <option>Email</option>
+              <option>Instagram</option>
+              <option>Telegram</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Contact details</span>
+            <input name="contact" type="text" autocomplete="off" placeholder="Phone, email, Instagram handle, or Telegram" required />
+          </label>
+
+          <div class="form-row">
+            <label>
+              <span>Project Type</span>
+              <select name="projectType" required>
+                <option value="">Select one</option>
+                <option>Social Media Design</option>
+                <option>Flyer Design</option>
+                <option>Brand Identity</option>
+                <option>Other</option>
+              </select>
+            </label>
+
+            <label>
+              <span>Deadline</span>
+              <input name="deadline" type="text" placeholder="Example: Friday, next week" />
+            </label>
+          </div>
+
+          <label>
+            <span>Budget Range</span>
+            <select name="budget">
+              <option value="">Select range</option>
+              <option>Still deciding</option>
+              <option>Small quick design</option>
+              <option>Standard project</option>
+              <option>Full creative direction</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Project Message</span>
+            <textarea name="message" rows="6" placeholder="Tell us what you want to create." required></textarea>
+          </label>
+
+          <button class="btn btn--primary" type="submit">Send Brief</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Lumen Noir Creative Studio</p>
+      <div>
+        <a href="index.html#home">Home</a>
+        <a href="projects.html">Projects</a>
+      </div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lumen Noir Creative Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&amp;family=Inter:wght@400;500;600;700&amp;family=Marcellus&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="space-scene" aria-hidden="true"></canvas>
+
+    <div class="intro" id="intro">
+      <div class="intro__glow"></div>
+      <div class="intro__content">
+        <p class="eyebrow">Where creativity meets precision</p>
+        <div class="intro__mark">LN</div>
+        <h1>Lumen Noir</h1>
+        <p class="intro__copy">A design studio crafting thoughtful visuals with clarity, intent, and impact.</p>
+        <button class="btn btn--primary" id="enterSite" type="button">Enter Site</button>
+      </div>
+    </div>
+
+    <header class="site-header" id="siteHeader">
+      <a class="brand" href="#home" aria-label="Lumen Noir home">
+        <span class="brand__mark">LN</span>
+        <span class="brand__text">Lumen Noir</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="siteNav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a class="header-cta" href="contact.html">Start a Project</a>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <p class="eyebrow hero__eyebrow">Creative studio</p>
+        <div class="hero__mark" aria-hidden="true">LN</div>
+        <h1>Lumen <span>Noir</span></h1>
+        <p class="hero__line">Design that speaks.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="projects.html">View Work</a>
+          <a class="btn btn--ghost" href="#services">Explore Services</a>
+        </div>
+      </section>
+
+      <section class="services section" id="services" aria-labelledby="servicesTitle">
+        <div class="section-heading">
+          <p class="eyebrow">What we create</p>
+          <h2 id="servicesTitle">Precision visuals for brands that want presence.</h2>
+        </div>
+
+        <div class="service-strip">
+          <article>
+            <span class="service-icon">01</span>
+            <h3>Social Media Design</h3>
+            <p>Purpose-driven social campaigns and digital assets designed to engage audiences and strengthen brand presence.</p>
+          </article>
+          <article>
+            <span class="service-icon">02</span>
+            <h3>Flyer Design</h3>
+            <p>Focused flyer concepts for launches, events, and promotions with strong structure and visual clarity.</p>
+          </article>
+          <article>
+            <span class="service-icon">03</span>
+            <h3>Brand Identity</h3>
+            <p>Identity systems and visual direction that bring consistency, character, and memorability to a brand.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio" aria-labelledby="portfolioTitle">
+        <div class="section-heading">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="portfolioTitle">A gallery built for your strongest pieces.</h2>
+        </div>
+
+        <div class="work-grid">
+          <a
+            class="work-card work-card--tall work-card--finance"
+            href="projects.html#finance-1"
+          >
+            <span>Finance Design</span>
+            <h3>Finova Financial Services</h3>
+            <small>View Project</small>
+          </a>
+          <a
+            class="work-card work-card--fashion"
+            href="projects.html#fashion-2"
+          >
+            <span>Fashion Flyer</span>
+            <h3>Finesse Collections</h3>
+            <small>View Project</small>
+          </a>
+          <a
+            class="work-card work-card--sale"
+            href="projects.html#sale-1"
+          >
+            <span>Sales Campaign</span>
+            <h3>Nexora Online Shop</h3>
+            <small>View Project</small>
+          </a>
+          <a
+            class="work-card work-card--wide work-card--artboard"
+            href="projects.html#artboard-1"
+          >
+            <span>Finance Design</span>
+            <h3>Blue Trust Finance</h3>
+            <small>View Project</small>
+          </a>
+        </div>
+      </section>
+
+      <section class="about section" id="about" aria-labelledby="aboutTitle">
+        <div class="about__content">
+          <p class="eyebrow">About the studio</p>
+          <h2 id="aboutTitle">Dark elegance, clean strategy, and visuals with a pulse.</h2>
+          <p>
+            Lumen Noir creates refined visual experiences for brands and individuals who value clarity,
+            confidence, and a lasting impression across every touchpoint.
+          </p>
+        </div>
+        <div class="about__stats" aria-label="Studio highlights">
+          <div>
+            <strong>3</strong>
+            <span>Core services</span>
+          </div>
+          <div>
+            <strong>24h</strong>
+            <span>Fast brief response</span>
+          </div>
+          <div>
+            <strong>100%</strong>
+            <span>Custom direction</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact" aria-labelledby="contactTitle">
+        <p class="eyebrow">Start a project</p>
+        <h2 id="contactTitle">Ready to make your brand impossible to ignore?</h2>
+        <p>Share your vision, goals, or initial direction, and we will shape a thoughtful visual concept around it.</p>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="contact.html">Open Contact Page</a>
+          <a class="btn btn--ghost" href="https://wa.me/2349049720587" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Lumen Noir Creative Studio</p>
+      <div>
+        <a href="#home">Top</a>
+        <a href="#portfolio">Work</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
